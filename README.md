@@ -1,8 +1,11 @@
 # Litter Object Detection Model (LODM)
 Welcome to the City of Norfolk's Litter Object Detection Model (LODM) Repo! This Repository contains the data and software necessary to get the LODM system started, accompanied by the products and data that have come as a result of the deployment of this Model
 
-LODM is a comprehensive, end-to-end computer vision pipeline that utilizes [YOLO](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj70amp052VAxWPFVkFHRjaNAEQFnoECEIQAQ&url=https%3A%2F%2Farxiv.org%2Fabs%2F1506.02640&usg=AOvVaw017FtXr2m7HO50_HFP3dAZ&opi=89978449), Python, and GIS software and techniques,
-to capture when, where and how much litter is present in the City of Norfolk. This project successfully quantifies litter levels in the City helping to inform targetted clean-up efforts across the City, beautifying the City and therefore increasing the propensity of residents to contribute to the economic activity of the City.
+LODM is a comprehensive, end-to-end computer vision pipeline that utilizes [YOLO](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj70amp052VAxWPFVkFHRjaNAEQFnoECEIQAQ&url=https%3A%2F%2Farxiv.org%2Fabs%2F1506.02640&usg=AOvVaw017FtXr2m7HO50_HFP3dAZ&opi=89978449), Python, and GIS software and techniques, to capture when, where and how much litter is present in the City of Norfolk. This project successfully quantifies litter levels in the City helping to inform targetted clean-up efforts across the City, beautifying the City and therefore increasing the propensity of residents to contribute to the economic activity of the City. This project is an effort led by [Keep Norfolk Beautiful](https://www.norfolk.gov/6308/Keep-Norfolk-Beautiful) in collaboration with [CivicLab](https://www.norfolk.gov/4803/CivicLab-Norfolk).
+
+If you are interested in volunteering to help keep norfolk beautiful click this [link](https://www.norfolk.gov/FormCenter/Keep-Norfolk-Beautiful-35/Volunteer-Interest-Form-685)
+
+If you have any questions about the software or techniques found in this repo please click this [link](mailto:Nicholas.darrow@norfolk.gov).
 
 
 

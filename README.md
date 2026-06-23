@@ -7,8 +7,6 @@ If you are interested in volunteering to help keep norfolk beautiful click this 
 
 If you have any questions about the software or techniques found in this repo please click this [link](mailto:Nicholas.darrow@norfolk.gov).
 
-
-
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 1.	Installation process

@@ -15,10 +15,10 @@ If you have any questions about the software or techniques found in this repo pl
 |[1. Model Training and Evaluation](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Model%20Training%20and%20Evaluation&version=GBmain)|How to get the model trained and evaluated, including the data it is trained on.|
 |[2. Route Randomization and Selection](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Route%20Randomization%20and%20Selection&version=GBmain)|Creating and randomly selecting 0.75 mile long routes along street centerlines, to be traveled to collect data.|
 |[3. ArcGIS Navigator](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/ArcGIS%20Navigator&version=GBmain)|How to configure Navigator to the routes created, inside ArcGIS, for seemless turn-by-turn navigation.|
-|[4. Route Navigation and Data Collection]()|Provides instructions on how to use the application, the GoPro, and how to drive for this process|
-|[5. Image and Data Preprocessing]()|Once data is captured run this script to prepare images and image metadata to be inferenced by the model|
-|[6. Batch Processing]()|Run after preprocessing data to get results|
-|[7. Data Appendation and Dashboard]()|Script that appends new data to the old data and runs that data to the powerbi dashboard that visualizes results|
+|[4. Route Navigation and Data Collection](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Route%20Navigation%20and%20Data%20Collection&version=GBmain)|Provides instructions on how to use the application, the GoPro, and how to drive for this process|
+|[5. Image and Data Preprocessing](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Image%20and%20Data%20Preprocessing&version=GBmain)|Once data is captured run this script to prepare images and image metadata to be inferenced by the model|
+|[6. Batch Processing](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Batch%20Processing&version=GBmain)|Run after preprocessing data to get results|
+|[7. Data Appendation and Dashboard](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Data%20Appendation%20and%20Dashboard&version=GBmain)|Script that appends new data to the old data and runs that data to the powerbi dashboard that visualizes results|
 
 
 # Getting Started

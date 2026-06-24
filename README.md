@@ -36,9 +36,14 @@ This module contains instructions on how to configure the routes generated in th
 ## 4. Route Navigation and Data Collection
 This module is more of an instruction manual versus a traditional repo folder. It provides detailed instructions on how to actual drive to capture data, camera configuration, Route Navigation, and edge-case handling.
 
-##5. Image and Data Preprocessing
-Once images have been captured on ranndomized routes, these images and their associated metadata must be preprocessed. The script in this module ensures GPS, and time data are extracted from images to be carried over into the final results for analysis and viewing of datapoints on a map and overtime. The second reason this script runs is to get images ready for model inferencing. a few key visual tranformations are applied to the images before inferencing to improve model performance.
- 
+## 5. Image and Data Preprocessing
+Once images have been captured on ranndomized routes, these images and their associated metadata must be preprocessed. The script in this module ensures GPS, and time data are extracted from images to be carried over into the final results for analysis and viewing of datapoints on a map and overtime. The second reason this script runs is to get images ready for model inferencing. a few key visual tranformations are applied to the images before inferencing to improve model performance. Finally, the photos are also cropped to remove tree and horizonlines as there is no litter in the sky, and duplicate images such as those taken at stops are removed based on how geographically close they are using their lat and long measures.
+
+## 6. Batch Processing
+After having images and accompanying metadata handled, they are then passed through a batch processing script that outputs inference results for batches of photos and metadata. The output contains a structured csv that contains attributes such as time and GPS data, with raw counts and litter level by route based on the cumulative distance of each route. Norfolk wards are geocoded to appropriate coordinates, and any data points that do not contain metadata are removed.
+
+## 7. Data Appendation and Dashboard
+Once the results are made available for a deployment, the data is appended to existing data in the home directory. You can then pull this data into an application such as PowerBI, Tableau, R or Python for visualization purposes to more easily understand location and temporal trends of litter levels and counts. 
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 
@@ -50,3 +55,25 @@ If you want to learn more about creating good readme files then refer the follow
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
+
+# Future Improvements
+This section goes over possible improvements to this project and the processes included in it. This section will generally follow the pipeline's flow
+
+## Improved and Specialized model 
+Currently the model is trained on non-proprietary data sourced from [Roboflow Universe](https://universe.roboflow.com/), which is unfortunately unavailable on the website anymore. The data contains images of varying quality across different environments and has been verified for quality, to the best of our abilities, but there was room for redundant or poor quality data that snuck through the cracks. Not only that the image data was not sourced from Norfolk, meaning that the model is trained to find litter across any environment, which is a benefit in itself as it allows for reproducibility in other cities and environments, but leaves room for error in specialized use-cases such as Norfolk's streetscapes. 
+
+We have included a capacity to retrain this model with data that is collected during deployments as the current pipelines saves images and accompanying annotations. One could collect a corpora of annotated image data from deployments and retrain this model for specific use in their own context. That being said, a large amount of data must be captured to accomplish this, upwards of 10,000 images that match the project owner's use-case.
+
+## Previous Route Selection and Route History
+In the current pipeline routes are randomly selected for equality of geographic distribution, but it does not save previous routes. This makes it impossible to conduct continued analysis of a single location to see how that locations differs in litter levels and count overtime with targetted clean-up efforts. In the future we want to add a functionality to the pipeline and navigator that allows users to choose from previously created and surveyed routes so that continually analysis can be conducted on those spots.
+
+## ArcGIS Navigator and Navigation optimization
+ArcGIS Navigator like any navigating software has it's quirks. Using the network analyst extension in ArcGIS, the map layer must be configured for the app and then published to AGOL for the App to pull in. Currently it works as expected, but its not fully fleshed out. It needs to e further developed.
+
+## Norfolk Open Data Portal Data Hosting
+[The Norfolk Open Data Portal](https://data.norfolk.gov/) is a public resource for hosting Norfolk's data about City programs, intitives and others figures, statistics and facts about Norfolk. In the future we will run deployment results to the Norfolk open data portal for users of the portal to use and pull this data.
+## Pipeline integrated into a cloud framework for greater automation and optimization
+currently this process runs locally on a virtual environment and requires heavy input by the administrator. This process will be moved to azure in the future and include a UI that KNB, our stakeholder can use to choose routes, upload images and automatically recieve results that will be uploaded to the Norfolk Open Data Portal.
+
+### Disclaimer
+This project is by no means a final project and is iteratively being improved and tested upon. The code and data in this repository is experimental, and should be individually verified and iterated upon in production environments.

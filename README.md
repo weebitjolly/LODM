@@ -69,7 +69,7 @@ You may use the model you trained or the model in module 6 for batch processing
 run the litter data appendation script to append to existing data from prior deployments.
 
 # Results
-You can find all forms of the results at this [Blob Storage Container](https://civiclabml9978599810.blob.core.windows.net/lodmproductiondata), which contains results from the last two deployments.
+You can find all forms of the results at this [Blob Storage Container](https://civiclabml9978599810.blob.core.windows.net/lodmproductiondata), which contains results from the last two deployments. You can also find the dashboard based on these results [here](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Data%20Appendation%20and%20Dashboard/KNB%20Litter%20Survey.pbix&version=GBmain).
 
 # Future Improvements
 This section goes over possible improvements to this project and the processes included in it. This section will generally follow the pipeline's flow

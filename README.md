@@ -68,6 +68,9 @@ You may use the model you trained or the model in module 6 for batch processing
 ##7.
 run the litter data appendation script to append to existing data from prior deployments.
 
+# Results
+You can find all forms of the results
+
 # Future Improvements
 This section goes over possible improvements to this project and the processes included in it. This section will generally follow the pipeline's flow
 

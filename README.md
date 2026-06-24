@@ -91,4 +91,4 @@ ArcGIS Navigator like any navigating software has it's quirks. Using the network
 currently this process runs locally on a virtual environment and requires heavy input by the administrator. This process will be moved to azure in the future and include a UI that KNB, our stakeholder can use to choose routes, upload images and automatically recieve results that will be uploaded to the Norfolk Open Data Portal.
 
 ### Disclaimer
-This project is by no means a final project and is iteratively being improved and tested upon. The code and data in this repository is experimental, and should be individually verified and iterated upon in production environments.
+This project is by no means a final product and is iteratively being improved and tested upon. The code and data in this repository is experimental, and should be individually verified and iterated upon in production environments.

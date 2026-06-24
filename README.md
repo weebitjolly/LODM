@@ -46,35 +46,45 @@ After having images and accompanying metadata handled, they are then passed thro
 Once the results are made available for a deployment, the data is appended to existing data in the home directory. You can then pull this data into an application such as PowerBI, Tableau, R or Python for visualization purposes to more easily understand location and temporal trends of litter levels and counts. 
 
 # Build and Test
-1. To begin building this project, begin at module 1 by downloading the jupyter notebook and train the model with data stored on azure blob storage.
-2. Move to module 2 and run the script in that module. You will need to download the City of Norfolk Street centerlines geodatabase and the wards.shp file. you can use your own cities streetline GDB and ward, civic league or 
 
+##1.
+To begin building this project, begin at module 1 by downloading the jupyter notebook and train the model with data stored on azure blob storage.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+##2.
+Move to module 2 and run the script in that module. You will need to download the City of Norfolk Street centerlines geodatabase and the wards.shp file. you can use your own cities streetline GDB and ward, civic league or the governmental dilineation that you choose.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+##3.
+after creating the routes bring them into ArcGIS and configure them for Navigator. Please reference the RouteRandomizer Geodatabase for examples.
+
+##4.
+You can reference the documents in module 4 to follow the proper procedures and rules to capture data.
+
+##5.
+Use the python file after you have configure your directories properly following collection of the data. Executing this file will properly preprocess your images and accompanying metadata. for batch processing in the next module. 
+
+##6.
+You may use the model you trained or the model in module 6 for batch processing
+
+##7.
+run the litter data appendation script to append to existing data from prior deployments.
 
 # Future Improvements
 This section goes over possible improvements to this project and the processes included in it. This section will generally follow the pipeline's flow
 
-## Improved and Specialized model 
+## -Improved and Specialized model 
 Currently the model is trained on non-proprietary data sourced from [Roboflow Universe](https://universe.roboflow.com/), which is unfortunately unavailable on the website anymore. The data contains images of varying quality across different environments and has been verified for quality, to the best of our abilities, but there was room for redundant or poor quality data that snuck through the cracks. Not only that the image data was not sourced from Norfolk, meaning that the model is trained to find litter across any environment, which is a benefit in itself as it allows for reproducibility in other cities and environments, but leaves room for error in specialized use-cases such as Norfolk's streetscapes. 
 
 We have included a capacity to retrain this model with data that is collected during deployments as the current pipelines saves images and accompanying annotations. One could collect a corpora of annotated image data from deployments and retrain this model for specific use in their own context. That being said, a large amount of data must be captured to accomplish this, upwards of 10,000 images that match the project owner's use-case.
 
-## Previous Route Selection and Route History
+## -Previous Route Selection and Route History
 In the current pipeline routes are randomly selected for equality of geographic distribution, but it does not save previous routes. This makes it impossible to conduct continued analysis of a single location to see how that locations differs in litter levels and count overtime with targetted clean-up efforts. In the future we want to add a functionality to the pipeline and navigator that allows users to choose from previously created and surveyed routes so that continually analysis can be conducted on those spots.
 
-## ArcGIS Navigator and Navigation optimization
+## -ArcGIS Navigator and Navigation optimization
 ArcGIS Navigator like any navigating software has it's quirks. Using the network analyst extension in ArcGIS, the map layer must be configured for the app and then published to AGOL for the App to pull in. Currently it works as expected, but its not fully fleshed out. It needs to e further developed.
 
-## Norfolk Open Data Portal Data Hosting
+## -Norfolk Open Data Portal Data Hosting
 [The Norfolk Open Data Portal](https://data.norfolk.gov/) is a public resource for hosting Norfolk's data about City programs, intitives and others figures, statistics and facts about Norfolk. In the future we will run deployment results to the Norfolk open data portal for users of the portal to use and pull this data.
-## Pipeline integrated into a cloud framework for greater automation and optimization
+## -Pipeline integrated into a cloud framework for greater automation and optimization
 currently this process runs locally on a virtual environment and requires heavy input by the administrator. This process will be moved to azure in the future and include a UI that KNB, our stakeholder can use to choose routes, upload images and automatically recieve results that will be uploaded to the Norfolk Open Data Portal.
 
 ### Disclaimer

@@ -46,7 +46,9 @@ After having images and accompanying metadata handled, they are then passed thro
 Once the results are made available for a deployment, the data is appended to existing data in the home directory. You can then pull this data into an application such as PowerBI, Tableau, R or Python for visualization purposes to more easily understand location and temporal trends of litter levels and counts. 
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+1. To begin building this project, begin at module 1 by downloading the jupyter notebook and train the model with data stored on azure blob storage.
+2. Move to module 2 and run the script in that module. You will need to download the City of Norfolk Street centerlines geodatabase and the wards.shp file. you can use your own cities streetline GDB and ward, civic league or 
+
 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 

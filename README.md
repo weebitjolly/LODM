@@ -60,7 +60,7 @@ after creating the routes bring them into ArcGIS and configure them for Navigato
 You can reference the documents in module 4 to follow the proper procedures and rules to capture data.
 
 ##5.
-Use the python file after you have configure your directories properly following collection of the data. Executing this file will properly preprocess your images and accompanying metadata. for batch processing in the next module. 
+Before executing Master LODM Preprocess, create a folder in your home directory titled deployments_#, the '#' in this case is to indicate which deployment you are on. Inside this folder create a sub-folder called "Raw Deployment Images". Use the python file after you have configure your directories properly following collection of the data. Executing this file will properly preprocess your images and accompanying metadata. for batch processing in the next module. 
 
 ##6.
 You may use the model you trained or the model in module 6 for batch processing

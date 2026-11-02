@@ -12,10 +12,10 @@ If you have any questions about the software or techniques found in this repo pl
 # Table of Contents
 | Module | Summary |
 |--------|---------|
-|[1. Route Navigation and Data Collection](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Route%20Navigation%20and%20Data%20Collection&version=GBmain)|Provides instructions on how to use the application, the GoPro, and how to drive for this process|
-|[2. Image and Data Preprocessing](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Image%20and%20Data%20Preprocessing&version=GBmain)|Once data is captured run this script to prepare images and image metadata to be inferenced by the model|
-|[3. Batch Processing](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Batch%20Processing&version=GBmain)|Run after preprocessing data to get results|
-|[4. Data Appendation and Dashboard](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Data%20Appendation%20and%20Dashboard&version=GBmain)|Script that appends new data to the old data and runs that data to the powerbi dashboard that visualizes results|
+|1. Route Navigation and Data Collection|Provides instructions on how to use the application, the GoPro, and how to drive for this process|
+|2. Image and Data Preprocessing|Once data is captured run this script to prepare images and image metadata to be inferenced by the model|
+|3. Batch Processing|Run after preprocessing data to get results|
+|4. Data Appendation and Dashboard|Script that appends new data to the old data and runs that data to the powerbi dashboard that visualizes results|
 
 # Getting Started
 You can start by navigating each of the modules above if you want a more in-depth explanation of each step of this project. These modules serve as the instruction manual for recreating this project for your own city. below you'll find a short synopsis of each step.
@@ -35,7 +35,7 @@ Once the results are made available for a deployment, the data is appended to ex
 # Quick start
 
 ## For KNB
-To begin you'll start by following the Route Directions and Litter Survey Standard Operating Procedures. You will drive with the GoPro attached to a city vehicle along those pre-determined routes following the documents' directions as closely as possible. These can be found in the [1. Route Navigation and Data Collection](https://dev.azure.com/City-of-Norfolk/LODM/_git/LODM%20Production?path=/Route%20Navigation%20and%20Data%20Collection&version=GBLODM_Forever) folder of this repository.
+To begin you'll start by following the Route Directions and Litter Survey Standard Operating Procedures. You will drive with the GoPro attached to a city vehicle along those pre-determined routes following the documents' directions as closely as possible. These can be found in the 1. Route Navigation and Data Collection folder of this repository.
 
 Once these routes have been driven and data collected, KNB will physically hand off the sd card containing the image data to an approved CivicLab team member
 

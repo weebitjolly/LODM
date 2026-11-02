@@ -1,0 +1,16 @@
+python-dotenv
+
+numpy
+pandas
+
+opencv-python
+Pillow
+ExifRead
+
+ultralytics
+
+geopandas
+shapely
+fiona
+pyproj
+rtree

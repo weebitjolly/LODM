@@ -56,7 +56,7 @@ Plug in the GoPro with the SD from KNB insert and plug the camera turned-on into
 Once all files are moved to the Raw Deployment Images folder inside the most recent deployment folder. run the "main.py" script here: "C:\Litter Production\Pipeline\LODM%20Production\Scripts\main.py" by running:
 
 ```python
-python "C:\Litter Production\Pipeline\LODM%20Production\Scripts\main.py"
+python "\Pipeline\Scripts\main.py"
 ```
 
 This will take an hour or so and inform when each script has completed in the terminal

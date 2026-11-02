@@ -47,13 +47,13 @@ This section is written for the CivicLab team member responsible for running the
 | **Virtual Environment** | depending on where you are running this a virtual environment will allow all of the packages in the requirements file to download and import for proper execution|
 
 ## 1. Folder Creation
-Start by first creating a folder in "C:\Litter Production\Deployments" titled "deployment_#" with the # being the number deployment you are on, (the last deployment was 4, so the last folder was titled "deployment_4") this folder will be referenced by the pipeline. Once this is created, create another folder within that one called "Raw Deployment Images" like so: "C:\Litter Production\Deployments\deployment_3\Raw Deployment Images".
+Start by first creating a folder in your local directory titled "deployment_#" with the # being the number deployment you are on, (the last deployment was 4, so the last folder was titled "deployment_4") this folder will be referenced by the pipeline. Once this is created, create another folder within that one called "Raw Deployment Images" like so: Local Directory...\Raw Deployment Images".
 
 ## 2. Data Upload
 Plug in the GoPro with the SD from KNB insert and plug the camera turned-on into the data science computer via USB-C. Once connected navigate to the GoPro's image folders here: "This PC\HERO13 Black\GoPro MTP Client Disk Volume\DCIM". From here export all valid .jpg files from each of the GoPro's image folders to the "Raw Deployment Images" folder in the C:drive. There will more than likely be multiple folders inside the GoPro with images. Take a passing check to ensure that the files you are sending are only jpg's and that each file is taken of the street any other photos should be discarded. There is no need to keep any of the images on the GoPro so cut and paste over. This will take some time.
 
 ## 3. Run Main
-Once all files are moved to the Raw Deployment Images folder inside the most recent deployment folder. run the "main.py" script here: "C:\Litter Production\Pipeline\LODM%20Production\Scripts\main.py" by running:
+Once all files are moved to the Raw Deployment Images folder inside the most recent deployment folder. run the "main.py" script here: "Pipeline\Scripts\main.py" by running:
 
 ```python
 python "\Pipeline\Scripts\main.py"
